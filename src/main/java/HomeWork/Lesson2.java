@@ -43,6 +43,7 @@ public class Lesson2 {
         char c3 = 1000;
         char c4 = '\u03E8';
         System.out.println(c1 + " " + c2 + " " + c3 + " " + c4);
+        System.out.println(c1 + " " + c2 + " " + c3 + " " + c4);
 
 
 
