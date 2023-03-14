@@ -20,7 +20,7 @@ public class Homework3 {
 //        System.out.println(result3);
         int a = 5;
         result4 = a-- - --a + ++a + a++ + a;
-        //        4   -   3 + 4   + 5  +5
+        //        5   -   3 + 4   + 4  +5
         System.out.println(result4);
 
     }
