@@ -12,12 +12,12 @@ public class Student {
 }
 
 class NewStudent{
+
     float sredneeArifmeticheskoe(Student st) {
         float srednee = (st.sredeeAlgebra+st.sredeeGeometry+st.sredeeHistory) / 3;
         System.out.println(srednee);
         return srednee;
     }
-
 
     public static void main(String[] args) {
         Student student1 = new Student();
