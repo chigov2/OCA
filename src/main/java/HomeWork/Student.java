@@ -59,7 +59,7 @@ class NewStudent{
         NewStudent st2  = new NewStudent();
         NewStudent st3  = new NewStudent();
         st2.sredneeArifmeticheskoe(student2);
-        st3.sredneeArifmeticheskoe(student3);
+        
 
 
 
