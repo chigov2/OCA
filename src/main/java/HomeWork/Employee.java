@@ -51,11 +51,12 @@ public class Employee {
 //    }
 
 
-//class NewEmployee{
-//    public static void main(String[] args) {
+class NewEmployee{
+    public static void main(String[] args) {
 //        Employee newEmployee = new Employee(2,"Mike",50,8000f);
 //        newEmployee.getId();
 //        newEmployee.getSurname();
 //        newEmployee.getSalary();
-//    }
+    }
+}
 
