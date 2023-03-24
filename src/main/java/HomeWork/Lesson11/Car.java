@@ -10,6 +10,26 @@ public class Car {
         this.engine = engine;
         this.doors = doors;
     }
+    void doorsCount(Car c, int a){
+        c.doors = a;
+
+    }
+    static void  swapColor(Car c1, Car c2){
+        String color = c1.color;
+        c1.color = c2.color;
+        c2.color = color;
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car("Red","V4",3);
+        Car c2 = new Car("Blue","V8",5);
+        c1.doorsCount(c1,3);
+        System.out.println(c1.doors);
+        swapColor(c1,c2);
+        System.out.println(c1.color);
+        System.out.println(c2.color);
+
+    }
 }
 
  class CarTest{
