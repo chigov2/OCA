@@ -17,7 +17,8 @@ public class Month {
     }
 
     public static void main(String[] args) {
-        int month = 1;
-        dayInMonth(6);
+//        int month = 1;
+        Month.dayInMonth(1);
+        Month.dayInMonth(2);
     }
 }
