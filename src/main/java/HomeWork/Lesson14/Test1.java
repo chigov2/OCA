@@ -13,9 +13,9 @@ public class Test1 {
                 }
                 INNER:
                 for (int secunda = 0; secunda < 60; secunda++){
-//                    if (secunda * chas > minuta){
-//                        continue MIDDLE;
-//                    }
+                    if (secunda * chas > minuta){
+                        continue MIDDLE;
+                    }
                     System.out.println(chas + " : "+ minuta + " : "+ secunda );
                 }
             }
