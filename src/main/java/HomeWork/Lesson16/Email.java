@@ -5,7 +5,7 @@ public class Email {
         int a = 0;//@
         int b = 0;//.
         int c = 0;//;
-        while(c < (s.length() - 1)){
+        while(c < (s.length()-1)){
             a = s.indexOf('@',c);
             b = s.indexOf('.',c);
             c = s.indexOf(';',c+1 );
