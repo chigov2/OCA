@@ -5,7 +5,7 @@ public class HomeWork15 {
         int chas = 0;
         OUTER:
         while(chas <6){
-            int minute = -1;
+            int minute = 0;
             MIDDLE:
             do {
                 int secunda = 0;
