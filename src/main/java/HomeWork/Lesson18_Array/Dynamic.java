@@ -12,10 +12,10 @@ public class Dynamic {
 
         array1 = new String[3];
         array2 = new int[3][];
-        for (int i = 0; i < array1.length; i++){
-            array1[i] = "hello " + i;
-            System.out.println(array1[i]);
-        }
+//        for (int i = 0; i < array1.length; i++){
+//            array1[i] = "hello " + i;
+//            System.out.println(array1[i]);
+//        }
 
         array2[0] = new int[3];
         array2[1] = new int[2];
