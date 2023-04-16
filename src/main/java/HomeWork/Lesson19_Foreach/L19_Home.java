@@ -26,7 +26,7 @@ public class L19_Home {
 
     public static void main(String[] args) {
 
-        String[] target = abc(new String[]{"Mike","Lena","Max"}, new String[]{"test","hello"});
+        String[] target = abc(new String[]{"mike","lena","max"}, new String[]{"test","hello"});
 
         //надо сравнить элементы массива c параметрами коммандной строки
         for (String s : args){
