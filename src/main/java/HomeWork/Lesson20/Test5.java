@@ -12,12 +12,11 @@ public class Test5 {
         list.add(new StringBuilder("hello3"));
         list.add(new StringBuilder("hello22"));
 
-        list2.add(new StringBuilder("list2_"));
-        list2.add(new StringBuilder("list3_"));
-
         for (StringBuilder list0: list){
             System.out.print(list0 + " ");
         }
         System.out.println();
+        System.out.println(list.indexOf("hello2"));//не работает
+        System.out.println(list.toString());
     }
 }
