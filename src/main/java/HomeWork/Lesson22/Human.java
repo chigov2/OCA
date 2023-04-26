@@ -3,7 +3,7 @@ package HomeWork.Lesson22;
 public class Human {
     final String pol;
 
-    public Human(String pol) {
+    Human(String pol) {
         this.pol = pol;
     }
     private String name;
@@ -19,8 +19,9 @@ public class Human {
         this.age = age;}
     }
 
-    public String getName() {
-        return name;
+    public StringBuilder getName() {
+        StringBuilder sb = new StringBuilder(name);
+        return sb;
     }
 
     public void setName(String name) {
@@ -42,6 +43,7 @@ class Test{
         human.setAge(50);
         human.setWeight(100);
         human.setName("Mikee");
+        human.getName().append("qwqq");
         System.out.println(human.getName() + " " + human.getWeight() + " "+ human.getAge());
     }
 
