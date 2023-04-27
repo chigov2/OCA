@@ -21,9 +21,15 @@ class Human1 {
 }
 
 class Students extends Human1{
-//    Students(){
-//        super();
-//    }
+    Students(){
+        super("Max");
+    }
+    Students(int i){
+        this();
+        System.out.println("Hello");
+
+    }
+
     public static void main(String[] args) {
         Students s2 = new Students();
     }

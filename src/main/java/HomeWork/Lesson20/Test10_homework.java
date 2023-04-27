@@ -18,7 +18,7 @@ public class Test10_homework {
 
     public static void main(String[] args) {
         Test10_homework dz = new Test10_homework();
-        dz.abc("hello","mikee","mikee","lena","max","alex","vova","andrey","valera");
+        dz.abc("hello","mikee","lena","max","alex","vova","andrey","valera");
 
     }
 }
