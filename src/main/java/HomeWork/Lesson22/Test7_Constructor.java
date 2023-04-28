@@ -4,10 +4,8 @@ public class Test7_Constructor {
 }
 
 class Human1 {
-//    Human1(){
-//        super();
-//    }
-
+    private String name;
+    private String lastName;
     Human1(String n){
         this(n,null);
     }
@@ -16,17 +14,15 @@ class Human1 {
         this.lastName = lastName;
     }
 
-    private String name;
-    private String lastName;
 }
-
+//01-17-40
 class Students extends Human1{
     Students(){
-        super("Max");
+        this(5);
+        System.out.println("Hello");
     }
     Students(int i){
-        this();
-        System.out.println("Hello");
+        super("Mikee");
 
     }
 
