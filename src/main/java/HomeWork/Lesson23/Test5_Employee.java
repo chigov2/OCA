@@ -14,6 +14,8 @@ public class Test5_Employee {
         System.out.println(emp1.experience);
 
         emp1.sleep();
+        Driver driver = new Driver();
+        driver.sleep();
     }
 }
 class Employee {
@@ -47,6 +49,10 @@ class Teacher extends Employee {
 class Driver extends Employee {
     String cars;
     void drive(){        System.out.println("drive");    }
+    @Override
+    void sleep() {
+        System.out.println("sleep driver");
+    }
 
 }
 
