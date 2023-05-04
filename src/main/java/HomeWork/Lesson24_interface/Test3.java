@@ -3,10 +3,16 @@ package HomeWork.Lesson24_interface;
 public class Test3 {
     public static void main(String[] args) {
         Teacher teacher = new Teacher();
-        teacher.fire();
+        Driver driver = new Driver();
+        teacher.fire(" Water");
+        driver.fire(" Extinguisher");
+        Help_able h = new Driver();
+        Swim_able s = new Driver();
+        System.out.println(h.helpFinal);
+        h.fire("wood");
+        h.help();
     }
     }
-
 class Employee {
     String name = "Mikee";
     String specialization;
@@ -22,46 +28,47 @@ class Employee {
     }
 
 }
+class Driver extends Employee implements Swim_able,Help_able{
+    String cars;
+    void drive() {
+        System.out.println("drive");
+    }
+    @Override
+    public void swim() {
+        System.out.println("Driver can swim");
+    }
 
+    @Override
+    public void help() {  System.out.println("Driver helps");
+    }
+    @Override
+    public void fire(String predmet) {
+        System.out.println("Driver puts out the fire " + predmet);
+    }
+}
 class Teacher extends Employee implements Help_able,Swim_able{
     int countOfStudents;
-
     void teach() {
         System.out.println("teach");
     }
-
     @Override
     public void help() {
         System.out.println("Teacher helps");
     }
-
     @Override
-    public void fire() {
-        System.out.println("Teacher puts out the fire");
+    public void fire(String predmet) {
+        System.out.println("Teacher puts out the fire" + predmet);
     }
-
     @Override
     public void swim() {
         System.out.println("Teacher swim");
     }
 }
 
-class Driver extends Employee implements Swim_able{
-    String cars;
-
-    void drive() {
-        System.out.println("drive");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("Driver can swim");
-    }
-}
-
 interface Help_able {
+    int helpFinal =10;
     void help();
-    void fire();
+    void fire(String predmet);
 }
 
 interface Swim_able {
