@@ -24,6 +24,8 @@ abstract public class Animal {
         System.out.println(lion1.name);
         lion1.run();
         lion1.eat();
+        lion1.sleep();
+        lion1.speak();
     }
 }
 
