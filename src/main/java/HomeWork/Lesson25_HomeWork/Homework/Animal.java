@@ -9,23 +9,23 @@ abstract public class Animal {
     abstract void sleep();
 
     public static void main(String[] args) {
-        Mechenosec mechenosec = new Mechenosec("mechenosec1");
-        System.out.println(mechenosec.name);
-        mechenosec.eat();
-        mechenosec.swim();
-        mechenosec.sleep();
-        Speakable pingvin = new Pingvin("Pingvin1");
-        pingvin.speak();
-        Animal lion = new Lion("Lion1");
-        System.out.println(lion.name);
-        lion.eat();
-        lion.sleep();
-        Mammal lion1 = new Lion("Lion_Mammal");
-        System.out.println(lion1.name);
-        lion1.run();
-        lion1.eat();
-        lion1.sleep();
-        lion1.speak();
+//        Mechenosec mechenosec = new Mechenosec("mechenosec1");
+//        System.out.println(mechenosec.name);
+//        mechenosec.eat();
+//        mechenosec.swim();
+//        mechenosec.sleep();
+//        Speakable pingvin = new Pingvin("Pingvin1");
+//        pingvin.speak();
+//        Animal lion = new Lion("Lion1");
+//        System.out.println(lion.name);
+//        lion.eat();
+//        lion.sleep();
+//        Mammal lion1 = new Lion("Lion_Mammal");
+//        System.out.println(lion1.name);
+//        lion1.run();
+//        lion1.eat();
+//        lion1.sleep();
+//        lion1.speak();
     }
 }
 
