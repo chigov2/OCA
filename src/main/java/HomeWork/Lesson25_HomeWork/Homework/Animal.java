@@ -11,7 +11,7 @@ abstract public class Animal {
     abstract void sleep();
 
     public static void main(String[] args) {
-        Animal fish = new Fish("Fish array Lucky") {
+        Fish fish = new Mechenosec("Fish array Lucky") {
             @Override
             void swim() {System.out.println("override fish swim");}
             @Override
@@ -27,7 +27,7 @@ abstract public class Animal {
             @Override
             void sleep() {}
         };
-        Animal mammal = new Mammal("Human") {
+        Animal mammal = new Lion("Human") {
             @Override
             void run() {System.out.println("Mammal run");}
             @Override
@@ -35,19 +35,36 @@ abstract public class Animal {
             @Override
             void sleep() {}
         };
-        Animal mechenosec = new Animal("Mechenosec array Fish") {
+        Animal mechenosec = new Fish("Mechenosec array Fish") {
             @Override
             void eat() {System.out.println("Mechenosec array eat ");}
             @Override
             void sleep() {System.out.println("Mechenosec array speak");}
-        };
-        Animal pingvin = new Animal("Pingvin") {
+
             @Override
-            void eat() {}
-            @Override
-            void sleep() {}
+            void swim() {
+
+            }
         };
-        Animal lion = new Animal("Lion") {
+        Bird pingvin = new Pingvin("Pingvin") {
+            @Override
+            void fly() {
+
+            }
+
+            @Override
+            void eat() {
+
+            }
+
+            @Override
+            void sleep() {
+
+            }
+
+
+        };
+        Lion lion = new Lion("Lion2") {
             @Override
             void eat() {}
             @Override
@@ -84,7 +101,7 @@ abstract public class Animal {
         };
 
 
-        Speakable [] animals_s = {bird_S,mammal_S};
+        Speakable [] animals_s = {bird_S,mammal_S,pingvin,lion,fish};
         Animal [] animals = {fish,bird,mammal,mechenosec,pingvin,lion};
 
 
@@ -133,7 +150,7 @@ abstract public class Animal {
     }
 
 
-abstract class Fish extends Animal{
+abstract class Fish extends Animal implements Speakable{
         Fish(String name){
         super(name);//передается значение в супер класс
         this.name = name;
