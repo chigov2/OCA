@@ -1,5 +1,7 @@
 package HomeWork.Lesson25_HomeWork.Homework;
 
+import HomeWork.Employee;
+
 abstract public class Animal {
     String name;
     Animal(String name){
@@ -9,6 +11,108 @@ abstract public class Animal {
     abstract void sleep();
 
     public static void main(String[] args) {
+        Animal fish = new Fish("Fish array Lucky") {
+            @Override
+            void swim() {System.out.println("override fish swim");}
+            @Override
+            void eat() {System.out.println("override fish eat");}
+        };
+        Animal bird = new Bird("Sweety") {
+            @Override
+            void fly() {
+                System.out.println("Bird Sweety flies");
+            }
+            @Override
+            void eat() {}
+            @Override
+            void sleep() {}
+        };
+        Animal mammal = new Mammal("Human") {
+            @Override
+            void run() {System.out.println("Mammal run");}
+            @Override
+            void eat() {}
+            @Override
+            void sleep() {}
+        };
+        Animal mechenosec = new Animal("Mechenosec array Fish") {
+            @Override
+            void eat() {System.out.println("Mechenosec array eat ");}
+            @Override
+            void sleep() {System.out.println("Mechenosec array speak");}
+        };
+        Animal pingvin = new Animal("Pingvin") {
+            @Override
+            void eat() {}
+            @Override
+            void sleep() {}
+        };
+        Animal lion = new Animal("Lion") {
+            @Override
+            void eat() {}
+            @Override
+            void sleep() {}
+        };
+
+        Speakable bird_S = new Bird("Lion speakable") {
+            @Override
+            void fly() {System.out.println("4");}
+            @Override
+            void eat() {System.out.println("5");}
+            @Override
+            void sleep() {System.out.println("6");}
+            @Override
+            public void speak() {
+
+                System.out.println("77");
+            }
+        };
+
+        Speakable mammal_S = new Mammal("Mammal speakable") {
+            @Override
+            void run() {
+                System.out.println("1");
+            }
+            @Override
+            void eat() {
+                System.out.println("2");
+            }
+            @Override
+            void sleep() {
+                System.out.println("3");
+            }
+        };
+
+
+        Speakable [] animals_s = {bird_S,mammal_S};
+        Animal [] animals = {fish,bird,mammal,mechenosec,pingvin,lion};
+
+
+//            for (Animal a: animals){
+//                    if (a instanceof Fish){((Fish) a).swim();}
+//                    if (a instanceof Bird){((Bird) a).fly();}
+//                    if (a instanceof Mammal){((Mammal) a).run();}
+//
+//                }
+
+            for (Speakable s: animals_s){
+                if (s instanceof Bird){
+                    ((Bird) s).fly();
+                    ((Bird) s).eat();
+                    ((Bird) s).sleep();
+                    ((Bird) s).speak();
+
+                        }
+
+                    if (s instanceof Mammal){
+                        ((Mammal) s).run();
+                        ((Mammal) s).eat();
+                        ((Mammal) s).sleep();
+                    }
+                }
+            }
+
+
 //        Mechenosec mechenosec = new Mechenosec("mechenosec1");
 //        System.out.println(mechenosec.name);
 //        mechenosec.eat();
@@ -27,7 +131,7 @@ abstract public class Animal {
 //        lion1.sleep();
 //        lion1.speak();
     }
-}
+
 
 abstract class Fish extends Animal{
         Fish(String name){
@@ -52,7 +156,7 @@ abstract class Bird extends Animal implements Speakable{
 
     @Override
     public void speak() {
-        System.out.println(name + "sings");
+        System.out.println(name + " sings");
     }
 }
 
@@ -110,13 +214,11 @@ class Lion extends  Mammal{
 
     @Override
     void run() {
-        System.out.println("lions run fast");
-    }
+        System.out.println("lions run fast");}
     @Override
-    void eat() {System.out.println("Lions eats other animals");    }
-
+    void eat() {System.out.println("Lions eats other animals");}
     @Override
-    void sleep() {System.out.println("Lions sleeps");  }
+    void sleep() {System.out.println("Lions sleeps");}
 
 }
 
