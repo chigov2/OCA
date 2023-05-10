@@ -6,7 +6,12 @@ public class Test1 {
         Car c1 = new Car("Red","V8");
         Car c2 = new Car("Red","V8");
         Car c3 = new Car("Black","V4");
-        System.out.println(c1.equals(c2));
+        c3 = c2;
+//        System.out.println(c1.equals(c3));
+        System.out.println(c1.hashCode());
+        System.out.println(c2.hashCode());
+        System.out.println(c3.hashCode());
+        System.out.println(c3);
     }
 }
 
@@ -30,13 +35,18 @@ class Car{
         boolean result;
         boolean result2;
 
-        Car c2 = (Car) obj;
+        Car c8 = (Car) obj;
         if (obj != null){//(obj instanceof Car)
-            result =  (color.equals(c2.color) && engine.equals(c2.engine));
+            result =  (color.equals(c8.color) && engine.equals(c8.engine));
             result2 = (color.equals(((Car) obj).color) && engine.equals(((Car) obj).engine));
             return result;//return result, result2;
 
         }else return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Car color: " +color + "; Car engine: " +engine;
     }
 }
 
