@@ -105,13 +105,6 @@ abstract public class Animal {
         Animal [] animals = {fish,bird,mammal,mechenosec,pingvin,lion};
 
 
-//            for (Animal a: animals){
-//                    if (a instanceof Fish){((Fish) a).swim();}
-//                    if (a instanceof Bird){((Bird) a).fly();}
-//                    if (a instanceof Mammal){((Mammal) a).run();}
-//
-//                }
-
             for (Speakable s: animals_s){
                 if (s instanceof Bird){
                     ((Bird) s).fly();
@@ -119,9 +112,9 @@ abstract public class Animal {
                     ((Bird) s).sleep();
                     ((Bird) s).speak();
 
-                        }
+                }
 
-                    if (s instanceof Mammal){
+                if (s instanceof Mammal){
                         ((Mammal) s).run();
                         ((Mammal) s).eat();
                         ((Mammal) s).sleep();
