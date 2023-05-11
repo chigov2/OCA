@@ -46,5 +46,14 @@ class C{
     }
 }
 class D{//1.18
+    static{abc(2);}
+    static void abc(int a){System.out.println(a + " ");}
+    D(){abc(4);}
+    static {abc(6);}
+    static {new D();}
+    {abc(8);}
+    public static void main(String[] args) {
+
+    }
 
 }
