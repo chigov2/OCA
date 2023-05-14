@@ -47,7 +47,7 @@ class C{
 }
 class D{//1.18
     static{abc(2);}
-    static void abc(int a){System.out.println(a + " ");}
+    static void abc(int a){System.out.println(a + " b");}
     D(){abc(4);}
     static {abc(6);}
     static {new D();}
