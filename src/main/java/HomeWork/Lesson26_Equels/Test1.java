@@ -33,12 +33,10 @@ class Car{
     @Override
     public boolean equals(Object obj) {
         boolean result;
-        boolean result2;
 
         Car c8 = (Car) obj;
         if (obj != null){//(obj instanceof Car)
             result =  (color.equals(c8.color) && engine.equals(c8.engine));
-            result2 = (color.equals(((Car) obj).color) && engine.equals(((Car) obj).engine));
             return result;//return result, result2;
 
         }else return false;
