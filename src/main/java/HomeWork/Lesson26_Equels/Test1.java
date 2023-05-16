@@ -37,7 +37,7 @@ class Car{
         Car c8 = (Car) obj;
         if (obj != null){//(obj instanceof Car)
             result =  (color.equals(c8.color) && engine.equals(c8.engine));
-            return result;//return result, result2;
+            return result;
 
         }else return false;
     }
