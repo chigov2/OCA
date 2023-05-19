@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class Test7 {
+public class Test7_finally {
 
     static int abc (){
         try {
@@ -17,6 +17,7 @@ public class Test7 {
             return 6;
         }finally {
             System.out.println("finally");
+//            return 7;
         }
     }
     public static void main(String[] args) {
