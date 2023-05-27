@@ -2,18 +2,18 @@ package HomeWork.Lesson27_Exceptions;
 
 public class Test12 {
     //38min
-    public void abc(){
-        int[] array = {1,2,3};
-        try{
+    void abc() {
+        int[] array = {1, 2, 3};
+        try {
             System.out.println(array[7]);
-        }
-        catch (ArrayIndexOutOfBoundsException error){
+        } catch (IndexOutOfBoundsException e) {
             String s = null;
-            System.out.println(array.length);
+            try {
+                System.out.println(s.length());
+            } catch (NullPointerException ex) {
+                System.out.println("Null pointer exception caught");
+            }
         }
-//        catch (NullPointerException error_null){
-//            System.out.println("null pointer exception");
-//        }
     }
 
     public static void main(String[] args) {

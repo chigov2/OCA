@@ -9,7 +9,7 @@ public class Test11 {
 
     public void abc() {
         try {
-            fis1 = new FileInputStream("test91.txt");
+            fis1 = new FileInputStream("test10.txt");
             try {
                 fis2 = new FileInputStream("test10.txt");
             } catch (FileNotFoundException e) {
