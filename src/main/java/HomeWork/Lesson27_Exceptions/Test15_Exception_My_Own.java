@@ -8,14 +8,18 @@ public class Test15_Exception_My_Own {
         if (tempAir >32){
             throw new SveloMishzuException("Темпеатура воздуха очень высокая: "+ tempAir);
         }
+        System.out.println("Вы пробежали марафон");
     }
 
     public static void main(String[] args) {
         Test15_Exception_My_Own t = new Test15_Exception_My_Own();
         try {
-            t.marathon(20,13);
+            t.marathon(20,15);
         } catch (PodvernutNoguException e) {
             System.out.println(e.getMessage());
+        }
+        finally {
+            System.out.println("В любом случае вы получите грамоту");
         }
     }
 }
