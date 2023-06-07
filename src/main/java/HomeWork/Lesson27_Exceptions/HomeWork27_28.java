@@ -4,7 +4,12 @@ public class HomeWork27_28 {
 
     public static void main(String[] args) {
         Tiger1 tiger = new Tiger1();
-        tiger.eat("meat");
+        try {
+            tiger.eat("meat2");
+        } catch (NoMeatException e) {
+            System.out.println(e.getMessage());
+        }
+
 
         try {
             tiger.drink("water");
