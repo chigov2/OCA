@@ -11,8 +11,7 @@ public class Test1 {
 
         LocalDate ld1 = LocalDate.of(2023,06,07);
         System.out.println(ld1);
-        LocalDate ld2 = LocalDate.of(2023, Month.JUNE,07);
-        System.out.println(ld2);
+
         LocalTime lt1 = LocalTime.of(20,23,36);
         System.out.println(lt1);
         LocalDateTime ldt1 = LocalDateTime.of(ld1,lt1);
