@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Month;
 
-public class Test5 {
+public class Test5_Duration {
     public static void main(String[] args) {
         LocalDate begin = LocalDate.of(2022, Month.SEPTEMBER,1);
         //does not work
