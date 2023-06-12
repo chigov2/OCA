@@ -51,7 +51,7 @@ class StudentInfo2 {
         StudentInfo2 s1 = new StudentInfo2();
 
         System.out.println("--------lambda------------------");
-        s1.testStudents2(studentArrayList2,(Student2 st) -> {return st.avgGrade > 7.5;});
+        s1.testStudents2(studentArrayList2,st -> {return st.avgGrade > 7.5;});
         System.out.println("--------boolean------------------");
         s1.testStudents2(studentArrayList2,(Student2 st) -> {return st.age > 25;});
         System.out.println("--------boolean------------------");
@@ -65,7 +65,8 @@ class StudentInfo2 {
             System.out.println(s.name);
         }
         System.out.println("--------predicate remove if delete------------------");
-        studentArrayList2.removeIf(student -> student.name.endsWith("a"));
+//        studentArrayList2.removeIf(student -> student.name.endsWith("a"));
+        studentArrayList2.removeIf(student -> {return student.name.endsWith("a");});
         System.out.println("--------predicate remove if delete adter deleting------------------");
         for (Student2 s : studentArrayList2){
             System.out.println(s.name);
